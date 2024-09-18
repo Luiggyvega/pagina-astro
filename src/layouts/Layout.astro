@@ -12,9 +12,8 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>Pagina Steam</title>
 	</head>
 	<body>
 		<!-- etiquetas semanticas?? -->
@@ -33,22 +32,78 @@ const { title } = Astro.props;
 					</menu>
 				</div>
 				<div class="menu-rigth">
-					<a href="#####" class="btn-download" >
+					<a href="#####" class="btn-download" > intalar Steam 
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25" /></svg>
-					intalar Steam </a>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25" /></svg>
+					</a>
 					<a href="">Iniciar Sesion </a>
+					<a href="">|</a>
 					<a href="">Idioma</a>
 				</div>
 			</div>
-		 </header>
+		</header>
+
 	<div class="baner">
+		<div class="menups">
+			<li><a href="">Tu tienda</a></li>
+			<li><a href="">Nuevo y destacable</a></li>
+			<li><a href="">Categorias</a></li>
+			<li><a href="">Tienda de puntos</a></li>
+			<li><a href="">Noticas</a></li>
+			<li><a href="">Laboratorios</a></li>
+			<input type="text" placeholder="buscar">
+		</div>
 		
 	</div>
 	<div class="baner2 container">
-		<div class="left-menu"></div>
+		<div class="menu-opccion">
+			<li>
+				<a href="">
+					<h1>Targetas regalo de Steam</h1>
+					<h1>Regala diversion</h1>
+				</a>
+			</li>
+			<li>
+				<h1>Vistos recientemente</h1>
+				<a href="">juego1</a>
+				<a href="">juego2</a>
+			</li>
+				<li> <h1>recomedados</h1>
+				<a href="">amigos</a>
+				<a href="">mentores</a>
+			</li>
+			<li><h1>Explorar Categorias</h1>
+				<a href="">lo mas vendido</a>
+				<a href="">novedades</a>
+				<a href="">lo mas barato</a>
+			</li>
+			<li>
+				<h1>explorar por generos</h1>
+				<a href="">free to play</a>
+				<a href="">accion</a>
+				<a href="">aventura</a>
+			</li>
+			
+		</div>
+
+		<div class="recomendado">
+			<h1>DESTACADOS Y RECOMENDADOS</h1>
+			<div class="contenido">
+				<div class="cara"></div>
+				<div class="caritas">
+					<li>Black Myth: Wukong</li>
+					<img src="https://i.pcmag.com/imagery/articles/03limhbAT0XKk6oWJuIJEXx-2.fit_lim.v1721332127.jpg" alt="">
+					<img src="https://cdn2.unrealengine.com/gs-screenshot-015-3840x2160-53080145a0c4.jpg?resize=1&w=1920" alt="">
+					<img src="https://d1q3zw97enxzq2.cloudfront.net/images/black_myth_wukong_scr.width-1000.bgcolor-000.format-jpeg_yzXoNbG.jpg" alt="">
+					<img src="https://sm.pcmag.com/t/pcmag_me/review/b/black-myth/black-myth-wukong_e8hc.1920.jpg" alt="">
+					<h1>Ya disponible</h1>
+					<h2>Lo mas vendido</h2>
+					<h3>COL$ 199.000</h3>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="baner3 " >
+	<div class="baner3 ">
 
 	</div>
 	
@@ -59,10 +114,12 @@ const { title } = Astro.props;
 		height: 100%;
 		margin: 0%;
 		padding: 0%;
+		background-color: #184879;
 	}
 	header{
-		height: 80px;
+		height: 100px;
 		background: #161d24;
+		padding-left: 20%;
 	}
 	.container{
 		margin: 0 auto;
@@ -93,7 +150,7 @@ const { title } = Astro.props;
 		color: #ffffff;
 	}
 	.flex-menu img{
-		width: 120px;
+		width: 180px;
 		
 	}
 	.menu-rigth{
@@ -101,51 +158,192 @@ const { title } = Astro.props;
 		width: 40%;
 		color: #fff5f5;
 		font-family: sans-serif;
+		margin-top: 5px;
+		
 	}
 	.menu-rigth a{
 		text-decoration: none;
-		color: #fff5f5;
+		color: #b3b3b3;
 		margin: 0 6px;
+		font-size: 13px;
 	}
 	.btn-download{
-		color: #fff;
-		background-color: green;
+		color: #ffffff;
+		background-color: rgb(37, 172, 37);
 		display: inline-block;
-		padding: 6px 12px;
+		padding: 4px 10px;
 		font-family: sans-serif;
 		text-decoration: none;
 		display: inline-flex;
 		align-items: center;
-		gap: 8px;
+		gap: 6px;
 		
 	}
+	
 	.btn-download svg{
-
 		height: 18px;
 	}
 	.btn-download:hover{
 		background-color: rgb(95, 255, 95);
 
 	}
-	.baner{
-		background: orange;
-		height: 360px;
+	.baner {
+    	background-image: url(https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_616x353.jpg?t=1726590088);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+    	height: 480px;
+		display: flex;
 	}
-	.baner2{
-		position: relative;
-		background: purple;
-		height: 240px;
+	
+	.menups{
+		margin-top: 30px;
+		background-color: rgba(63, 80, 236, 0.418);
+		display: flex;
+		height: 35px;
+		width: 70%;
+		justify-content: space-between;
+		margin-left: 20%;
+		align-items: center;
+		font-family: sans-serif;
+		list-style-type: none;
 	}
-	.left-menu{
-		background: pink;
-		width: 180px;
-		height: 360px;
-		position: sticky;
-		top: 80px; 
-		left: 0;
+	.menups a{
+		margin-left: 10px;
+		list-style: none;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 500px;
+		color: antiquewhite;
+		text-decoration: none;
 	}
-	.baner3{
-		background-color: red;
-		height: 1000px;
+	.menups input{
+		margin-left: 40px;
+		margin-right: 5px;
+		background: rgb(35, 45, 99);
+		color: #161d24;
+		height: 25px;
+		border-radius: 6px;
+		border: 0;
 	}
+
+	.baner2 {
+        height: 370px;
+		display: flex;
+        }
+	
+	.menu-opccion{
+		height: 500px;
+		width: 200px;
+		flex-wrap: wrap;
+		list-style-type: none;
+		font-family: sans-serif;
+	}
+	.menu-opccion li{
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	.menu-opccion h1{
+		color: #5e79f5;
+		font-size: 14px;
+		font-weight: 500px;
+	}
+	.menu-opccion a>h1:hover{
+		color: #fff5f5;
+	}
+	.menu-opccion a{
+		font-weight: 500px;
+		text-decoration: none;
+		color: #fff5f5;
+		display: block;
+		font-size: 13px;
+	}
+	.menu-opccion a:hover{
+		color: #2e80fc;
+	}
+	.menu-opccion li h1,.menu-opccion li a {
+    	margin: 0; /* Elimina márgenes entre el h1 y los a */
+}
+.recomendado {
+    width: 100%;
+	font-family: sans-serif;
+    display: block; /* Cambiamos a block para que el título esté encima */
+}
+
+.recomendado h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+	margin-left: 20px;
+	color: #fff5f5;
+	font-weight: 200;
+}
+
+.contenido {
+    display: flex; /* Flex para las secciones debajo del título */
+	list-style-type: none;
+	margin-left: 20px;
+	font-family: sans-serif;
+	
+}
+
+.cara {
+    height: 320px; /* Puedes ajustar el tamaño */
+    width: 60%;
+    background-color: #fff5f5;
+    background-image: url('https://gaming-cdn.com/images/products/7678/orig/black-myth-wukong-pc-game-steam-europe-and-us-and-canada-cover.jpg?v=1724142714');
+    background-size: cover;
+    background-position: center;
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.caritas {
+	height: 320px;
+    width: 40%;
+	margin: 0;
+	background: rgba(1, 9, 32, 0.486);
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+.caritas li{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	margin-left: 20px;
+	color: #fff5f5;
+}
+.caritas h1, .caritas h2{
+	margin: 0;
+	margin-left: 20px;
+}
+.caritas h1{
+	font-size: 20px;
+}
+.caritas h2{
+	border:0;
+	border-color: #161d24;
+	color: #fff5f5;
+	height: 18px;
+	border-radius: 5%;
+	width: 120px;
+	font-size: 14px;
+	text-align: center;
+	background: gray;
+}
+.caritas h3{
+	margin-left: 20px;
+	margin-bottom: 10px;
+	font-size: 11px;
+	color: #fff5f5;
+}
+
+.caritas img{
+	height: 80px;
+	width: 180px;
+    margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+    .baner3 {
+        background-color: red;
+        height: 1000px;
+        }
 </style>
