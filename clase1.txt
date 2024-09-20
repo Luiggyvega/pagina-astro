@@ -21,4 +21,6 @@ lo que se encuentra en medio de --- es js
 para crear variables de css = --nombreVariable: 111, 222, 33;
 rgb(var(--nombreVariable)), = llamar valor de la variable
 }
-
+npx astro add tailwind = para instalar el taiwind
+heroicons== para iconos gratis
+[]= para poner valores arbitrarios, la medida que me de la gana pues
