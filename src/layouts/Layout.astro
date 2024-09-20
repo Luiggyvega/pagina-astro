@@ -91,6 +91,7 @@ const { title } = Astro.props;
 			<div class="contenido">
 				<div class="cara"></div>
 				<div class="caritas">
+					<a href="">
 					<li>Black Myth: Wukong</li>
 					<img src="https://i.pcmag.com/imagery/articles/03limhbAT0XKk6oWJuIJEXx-2.fit_lim.v1721332127.jpg" alt="">
 					<img src="https://cdn2.unrealengine.com/gs-screenshot-015-3840x2160-53080145a0c4.jpg?resize=1&w=1920" alt="">
@@ -99,12 +100,37 @@ const { title } = Astro.props;
 					<h1>Ya disponible</h1>
 					<h2>Lo mas vendido</h2>
 					<h3>COL$ 199.000</h3>
+				</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="baner3 ">
+	<div class="baner3">
+			<div class="contb1 contenido">
+				<a href="">
+				<img src="https://www.hd-tecnologia.com/imagenes/articulos/2021/02/Steam-da-inicio-a-Game-Festival-con-descuentos-y-mas-de-500-demos-de-juegos-3.jpg" alt="">
+			</a>
+			</div>
+			<h1>ofertas especiales</h1>
+			<div class="ofertas " >
+				<div class="oferta1">
+					<h1>oferta1</h1>
 
+				</div>
+
+				<div class="oferta1">
+					<h1>oferta2</h1>
+
+				</div>
+				<div>
+				<div class="oferta2">
+					<h1>oferta3</h1>
+				</div>
+				<div class="oferta2">
+					<h1>oferta4</h1>
+				</div>
+			</div>
+			</div>
 	</div>
 	
 	</body>
@@ -342,8 +368,56 @@ const { title } = Astro.props;
 	margin-bottom: 10px;
 }
 
-    .baner3 {
-        background-color: red;
-        height: 1000px;
-        }
+.baner3 {
+    margin-top: 30px;
+    background: rgba(1, 9, 32, 0.486); /* Fondo que quieres que se vea */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    height: 1000px; /* Asegúrate de que sea lo suficientemente alto */
+    position: relative; /* Para un mejor control del contenido interno */
+}
+
+.contb1 {
+    height: 200px;
+    display: flex;
+    padding-top: 20px; /* Espacio de 20px desde la parte superior */
+}
+
+.contb1 img {
+    height: 200px; /* Mantiene la relación de aspecto */
+    width: 1000px; /* Ocupa todo el ancho */
+	margin-left: 25%;
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+.contb1 img : :hover{
+	box-shadow: 0 4px 15px rgba(255, 165, 0, 0.6);
+}
+.baner3 h1{
+	font-family: sans-serif;
+	margin-left: 20%;
+	font-size: 20px;
+	font-weight: 50px;
+	margin-top: 40px;
+}
+.ofertas{
+	margin-top: 5px;
+	margin-left: 20%;
+	height: 350px;
+	width: 1000px;
+	margin: 1px solid;
+	display: flex;
+}
+.oferta1{
+	height: auto;
+	width: 325px;
+	margin-right: 10px;
+	border: 1px solid;
+	
+}
+.oferta2{
+	flex-direction: column;
+	border: 1px solid;
+	height: 168px;
+	width: 325px;
+	margin-bottom: 10px;
+}
 </style>
