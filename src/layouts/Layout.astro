@@ -18,31 +18,54 @@ const { title } = Astro.props;
 	<body class="m-0 p-0 bg-blue-950">
 		<!-- etiquetas semanticas?? -->
 		<!-- <slot />  -->
-		<header class="h-[100px] bg-[#161d24] " >
+		<header class="h-[100px] bg-[#161d24]">
 			<div class="container max-w-[1200px] mx-auto">
-				<div class="flex h-[80px] w-[60%] float-left items-center text-[ #fff5f5] uppercase ">
+				<div
+					class="ml-[12%] flex h-[80px] w-[60%] float-left items-center text-[#fff5f5] uppercase font-sans mt-3"
+				>
 					<img
+						class="w-40"
 						src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
 						alt=""
 					/>
 
 					<menu>
-						<li class="ml-[10px] inline-block"><a class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]" href="">Tienda</a></li>
-						<li class="ml-[10px] inline-block"><a class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]" href="">Comunidad</a></li>
-						<li class="ml-[10px] inline-block"><a class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]" href="">Acerca de</a></li>
-						<li class="ml-[10px] inline-block"><a class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]" href="">Soporte</a></li>
+						<li class="ml-[10px] inline-block">
+							<a
+								class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]"
+								href="">Tienda</a>
+						</li>
+						<li class="ml-[10px] inline-block">
+							<a
+								class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]"
+								href="">Comunidad</a>
+						</li>
+						<li class="ml-[10px] inline-block">
+							<a
+								class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]"
+								href="">Acerca de</a>
+						</li>
+						<li class="ml-[10px] inline-block">
+							<a
+								class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]"
+								href="">Soporte</a>
+						</li>
 					</menu>
 				</div>
-				<div class="menu-rigth">
-					<a href="#####" class="btn-download">
-						intalar Steam
+				<div
+					class="float-left text-[#fff5f5] font-sans mt-1 items-center"
+				>
+					<a
+						href="#####"
+						class="btn-download text-[#fff5f5] text-[13px] bg-green-700 py-[2px] px-3 inline-flex hover:text-[white] hover:bg-green-900"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke-width="1.5"
 							stroke="currentColor"
-							class="size-6"
+							class="size-4 m-1"
 						>
 							<path
 								stroke-linecap="round"
@@ -50,115 +73,143 @@ const { title } = Astro.props;
 								d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25"
 							></path></svg
 						>
+						intalar Steam
 					</a>
-					<a href="">Iniciar Sesion </a>
-					<a href="">|</a>
-					<a href="">Idioma</a>
+					<a class="text-[#fff5f5] mx-2 text-[13px]" href=""
+						>Iniciar Sesion
+					</a>
+					<a class="text-[#fff5f5] mx-2 text-[13px]" href="">|</a>
+					<a class="text-[#fff5f5] mx-2 text-[13px]" href="">Idioma</a
+					>
 				</div>
 			</div>
 		</header>
 
-		<div class="baner">
-			<div class="menups">
-				<li><a href="">Tu tienda</a></li>
-				<li><a href="">Nuevo y destacable</a></li>
-				<li><a href="">Categorias</a></li>
-				<li><a href="">Tienda de puntos</a></li>
-				<li><a href="">Noticas</a></li>
-				<li><a href="">Laboratorios</a></li>
-				<input type="text" placeholder="buscar" />
+		<div
+			class="baner h-[480px] flex bg-center bg-cover bg-no-repeat bg-[url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_616x353.jpg?t=1726590088')]"
+		>
+			<div
+				class="mt-6 menups pt-2- bg-[#0c426ed2] flex h-9 w-[70%] justify-between ml-[20%] items-center font-sans list-none px-2 font-medium text-white text-[14px]"
+			>
+				<li><a class="" href="">Tu tienda</a></li>
+				<li><a class="" href="">Nuevo y destacable</a></li>
+				<li><a class="" href="">Categorias</a></li>
+				<li><a class="" href="">Tienda de puntos</a></li>
+				<li><a class="" href="">Noticas</a></li>
+				<li><a class="" href="">Laboratorios</a></li>
+				<input
+					class="ml-10 mr-1 bg-[#232d63] text-[#161d24] h-6 rounded-md"
+					type="text"
+					placeholder="buscar"
+				/>
 			</div>
 		</div>
-		<div class="baner2 container max-w-[1200px] mx-auto">
-			<div class="menu-opccion">
-				<li>
-					<a href="">
-						<h1>Targetas regalo de Steam</h1>
-						<h1>Regala diversion</h1>
+		<div class="baner2 flex">
+			<div class="menu-opccion ml-[4%] list-none h-[500px] w-[200px] flex-wrap font-sans mt-2">
+				<li class="mt-3 mb-4 hover:text-[white]">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-10 text-blue-700"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+						></path>
+					</svg>
+	
+					<a  href="">
+						<h1 class=" text-[#5e79f5] text-[15px] uppercase font-sans font-medium ">Targetas regalo de Steam</h1>
+						<h1 class=" text-[#5e79f5] text-[15px] uppercase font-sans font-medium">Regala diversion</h1>
 					</a>
 				</li>
-				<li>
-					<h1>Vistos recientemente</h1>
-					<a href="">juego1</a>
-					<a href="">juego2</a>
+				<li class="mt-3 mb-4">
+					<h1 class=" text-[#5e79f5] text-[15px] uppercase font-sans font-medium">Vistos recientemente</h1>
+					<a class="text-white flex hover:text-[blue] text-[13px]" href="">juego1</a>
+					<a class="text-white flex hover:text-[blue] text-[13px]" href="">juego2</a>
 				</li>
-				<li>
-					<h1>recomedados</h1>
-					<a href="">amigos</a>
-					<a href="">mentores</a>
+				<li class="mt-3 mb-4">
+					<h1 class=" text-[#5e79f5] text-[15px] uppercase font-sans font-medium">recomedados</h1>
+					<a class="text-white flex hover:text-[blue] text-[13px]" href="">amigos</a>
+					<a class="text-white flex hover:text-[blue] text-[13px]" href="">mentores</a>
 				</li>
-				<li>
-					<h1>Explorar Categorias</h1>
-					<a href="">lo mas vendido</a>
-					<a href="">novedades</a>
-					<a href="">lo mas barato</a>
+				<li class="mt-3 mb-4">
+					<h1 class=" text-[#5e79f5] text-[15px] uppercase font-sans font-medium">Explorar Categorias</h1>
+					<a class="text-white flex hover:text-[blue] text-[13px]" href="">lo mas vendido</a>
+					<a class="text-white flex hover:text-[blue] text-[13px]" href="">novedades</a>
+					<a class="text-white flex hover:text-[blue] text-[13px]" href="">lo mas barato</a>
 				</li>
-				<li>
-					<h1>explorar por generos</h1>
-					<a href="">free to play</a>
-					<a href="">accion</a>
-					<a href="">aventura</a>
+				<li class="mt-3 mb-4">
+					<h1 class=" text-[#5e79f5] text-[15px] uppercase font-sans font-medium">explorar por generos</h1>
+					<a class="text-white flex hover:text-[blue] text-[13px]" href="">free to play</a>
+					<a class="text-white flex hover:text-[blue] text-[13px]" href="">accion</a>
+					<a class="text-white flex hover:text-[blue] text-[13px]" href="">aventura</a>
 				</li>
 			</div>
-
-			<div class="recomendado">
-				<h1>DESTACADOS Y RECOMENDADOS</h1>
-				<div class="contenido">
-					<div class="cara"></div>
+			<div class="recomendado w-[100%] ml-[2%]">
+				<h1 class="text-[15px] mb-1 ml-5 text-white mt-5 font-sans font-normal">DESTACADOS Y RECOMENDADOS</h1>
+				<div class="contenido flex list-none ml-5 font-serif ">
+					<div class="cara hover:cursor-pointer h-[360px] w-[60%] bg-[#fff5f5] bg-[url('https://gaming-cdn.com/images/products/7678/orig/black-myth-wukong-pc-game-steam-europe-and-us-and-canada-cover.jpg?v=1724142714')] shadow-[3px_3px_8px_#00000066]"></div>
 					<a href="">
-						<div class="caritas"></div>
-						<a href="">
-							<!-- <li>Black Myth: Wukong</li>
-							<img
-								src="https://i.pcmag.com/imagery/articles/03limhbAT0XKk6oWJuIJEXx-2.fit_lim.v1721332127.jpg"
-								alt=""
-							/>
-							<img
-								src="https://cdn2.unrealengine.com/gs-screenshot-015-3840x2160-53080145a0c4.jpg?resize=1&w=1920"
-								alt=""
-							/>
-							<img
-								src="https://d1q3zw97enxzq2.cloudfront.net/images/black_myth_wukong_scr.width-1000.bgcolor-000.format-jpeg_yzXoNbG.jpg"
-								alt=""
-							/>
-							<img
-								src="https://sm.pcmag.com/t/pcmag_me/review/b/black-myth/black-myth-wukong_e8hc.1920.jpg"
-								alt=""
-							/>
-							<h1>Ya disponible</h1>
-							<h2>Lo mas vendido</h2>
-							<h3>COL$ 199.000</h3> -->
+						<div class="h-[360px] w-[40%] m-0 bg-gray-900 mr-[12%] shadow-[3px_3px_8px_#00000066]">
+							<a href="">
+								<li class="mt-3 mb-5 text-[20px] ml-5 text-[#fff5f5]">Black Myth: Wukong</li>
+								<div class="flex flex-wrap justify-start">
+								<img class="h-[80px] w-[180px] mb-2 "
+									src="https://i.pcmag.com/imagery/articles/03limhbAT0XKk6oWJuIJEXx-2.fit_lim.v1721332127.jpg"
+									alt=""
+								/>
+								<img class="h-[80px] w-[180px] mb-2  ml-2"
+									src="https://cdn2.unrealengine.com/gs-screenshot-015-3840x2160-53080145a0c4.jpg?resize=1&w=1920"
+									alt=""
+								/>
+								<img class="h-[80px] w-[180px] mb-2 "
+									src="https://d1q3zw97enxzq2.cloudfront.net/images/black_myth_wukong_scr.width-1000.bgcolor-000.format-jpeg_yzXoNbG.jpg"
+									alt=""
+								/>
+								<img class="h-[80px] w-[180px] mb-2 ml-2 "
+									src="https://sm.pcmag.com/t/pcmag_me/review/b/black-myth/black-myth-wukong_e8hc.1920.jpg"
+									alt=""
+								/>
+							</div>
+							<h1 class="text-[20px] text-[#fff5f5] ml-5 my-0">Ya disponible</h1>
+							<h2 class="text-[14px] h-5 w-28 bg-gray-400 text-center ml-5 rounded text-[#fff5f5]">Lo mas vendido</h2>
+							<h3 class="ml-5 mb-3 text-[11px] text-[#fff5f5]">COL$ 199.000</h3>
 						</a>
+						</div>
+						
 					</a>
 				</div>
 			</div>
 		</div>
-		<div class="baner3 container max-w-[1200px] mx-auto">
-			<div class="contb1 contenido">
+		<div class="baner3 container max-w-[1200px] mx-auto font-sans">
+			<div class="contb1 ">
 				<a href="">
-					<img
+					<img class="h-[200px] w-[80%] flex ml-[16%] shadow-[3px_3px_8px_#00000066] hover:shadow-blue-400 "
 						src="https://www.hd-tecnologia.com/imagenes/articulos/2021/02/Steam-da-inicio-a-Game-Festival-con-descuentos-y-mas-de-500-demos-de-juegos-3.jpg"
 						alt=""
 					/>
 				</a>
 			</div>
-			<h1>ofertas especiales</h1>
-			<div class="ofertas">
-				<a href="">
-					<div class="oferta1">
-						<h1>oferta1</h1>
-					</div>
-				</a>
+			<h1 class="ml-[16%] mt-10 font-medium text-white text-[15px] uppercase mb-3">ofertas especiales</h1>
+			<div class="ofertas ml-[16%] w-[80%] flex h-[400px]">
 
-				<div class="oferta1">
-					<h1>oferta2</h1>
+				<div class="bg-[#00BBFF] w-[320px] mr-3  mb-3 shadow-[3px_3px_8px_#00000066]">
+					<img class="h-[250px]" src="https://phantom-marca.unidadeditorial.es/a1971afbd9030f3979dbb1dc2989a139/resize/1200/f/jpg/assets/multimedia/imagenes/2023/08/14/16920229037351.jpg" alt="">
+				</div>
+				<div class="bg-[#00BBFF] w-[320px] mr-3  mb-3 shadow-[3px_3px_8px_#00000066]">
+					<img class="h-[250px]" src="https://images5.alphacoders.com/981/981500.jpg" alt="">
 				</div>
 				<div>
-					<div class="oferta2">
-						<h1>oferta3</h1>
+					<div class="bg-[#00BBFF] w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]">
+						<img class="h-[130px] w-[320px]" src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_DarkSoulsRemastered.jpg" alt="">
 					</div>
-					<div class="oferta2">
-						<h1>oferta4</h1>
+					<div class="bg-[#00BBFF] w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]">
+						<img class="h-[130px] w-[320px]" src="https://www.elespectador.com/resizer/v2/LOMC6L6CKRAGFGPIQUKVLQKEPI.jpg?auth=a1c7aff99f05291f99011bf7772700e88b7f2a083402e8fcbd3a91fa04fbec70&width=920&height=613&smart=true&quality=60" alt="">
 					</div>
 				</div>
 			</div>
@@ -200,13 +251,10 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style>
-	/* html,
+	html,
 	body {
-		height: 100%;
-		margin: 0%;
-		padding: 0%;
 		background-color: rgb(24, 48, 68);
-	} */
+	} 
 	/* header {
 		height: 100px;
 		background: #161d24;
@@ -254,7 +302,7 @@ const { title } = Astro.props;
 		margin: 0 6px;
 		font-size: 13px;
 	} */
-	.btn-download {
+	/* .btn-download {
 		color: #ffffff;
 		background-color: rgb(37, 172, 37);
 		display: inline-block;
@@ -271,7 +319,8 @@ const { title } = Astro.props;
 	}
 	.btn-download:hover {
 		background-color: rgb(95, 255, 95);
-	}
+	}*/
+	/* 
 	.baner {
 		background-image: url(https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_616x353.jpg?t=1726590088);
 		background-size: cover;
@@ -302,7 +351,8 @@ const { title } = Astro.props;
 		color: antiquewhite;
 		text-decoration: none;
 	}
-	.menups input {
+		*/
+	/* .menups input {
 		margin-left: 40px;
 		margin-right: 5px;
 		background: rgb(35, 45, 99);
@@ -310,9 +360,9 @@ const { title } = Astro.props;
 		height: 25px;
 		border-radius: 6px;
 		border: 0;
-	}
+	} */
 
-	.baner2 {
+	/* .baner2 {
 		height: 370px;
 		display: flex;
 	}
@@ -348,12 +398,12 @@ const { title } = Astro.props;
 	}
 	.menu-opccion li h1,
 	.menu-opccion li a {
-		margin: 0; /* Elimina márgenes entre el h1 y los a */
-	}
-	.recomendado {
+		margin: 0; 
+	} */
+	/* .recomendado {
 		width: 100%;
 		font-family: sans-serif;
-		display: block; /* Cambiamos a block para que el título esté encima */
+		display: block; 
 	}
 
 	.recomendado h1 {
@@ -362,26 +412,26 @@ const { title } = Astro.props;
 		margin-left: 20px;
 		color: #fff5f5;
 		font-weight: 200;
-	}
+	} */
 
-	.contenido {
-		display: flex; /* Flex para las secciones debajo del título */
+	/* .contenido {
+		display: flex;
 		list-style-type: none;
 		margin-left: 20px;
 		font-family: sans-serif;
 	}
 
 	.cara {
-		height: 320px; /* Puedes ajustar el tamaño */
+		height: 320px;
 		width: 60%;
 		background-color: #fff5f5;
 		background-image: url("https://gaming-cdn.com/images/products/7678/orig/black-myth-wukong-pc-game-steam-europe-and-us-and-canada-cover.jpg?v=1724142714");
 		background-size: cover;
 		background-position: center;
 		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-	}
+	} */
 
-	.caritas {
+	/* .caritas {
 		height: 320px;
 		width: 40%;
 		margin: 0;
@@ -429,14 +479,13 @@ const { title } = Astro.props;
 		width: 180px;
 		margin-left: 10px;
 		margin-bottom: 10px;
-	}
+	} */
 
-	.baner3 {
-		margin-top: 30px;
-		background: rgba(1, 9, 32, 0.486); /* Fondo que quieres que se vea */
+	/* .baner3 {
+		background: rgba(1, 9, 32, 0.486); 
 		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-		height: 1000px; /* Asegúrate de que sea lo suficientemente alto */
-		position: relative; /* Para un mejor control del contenido interno */
+		height: 1000px;
+		position: relative; 
 	}
 	.baner3 a {
 		text-decoration: none;
@@ -445,12 +494,12 @@ const { title } = Astro.props;
 	.contb1 {
 		height: 200px;
 		display: flex;
-		padding-top: 20px; /* Espacio de 20px desde la parte superior */
-	}
+		padding-top: 20px; 
+		} */
 
-	.contb1 img {
-		height: 200px; /* Mantiene la relación de aspecto */
-		width: 1000px; /* Ocupa todo el ancho */
+	/* .contb1 img {
+		height: 200px;
+		width: 1000px;
 		margin-left: 25%;
 		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
 	}
@@ -471,8 +520,8 @@ const { title } = Astro.props;
 		width: 1000px;
 		margin: 1px solid;
 		display: flex;
-	}
-	.oferta1 {
+	} */
+	/* .oferta1 {
 		height: auto;
 		width: 325px;
 		margin-right: 10px;
@@ -484,5 +533,5 @@ const { title } = Astro.props;
 		height: 168px;
 		width: 325px;
 		margin-bottom: 10px;
-	}
+	} */
 </style>
