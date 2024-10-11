@@ -21,7 +21,7 @@ const { title } = Astro.props;
 		<header class="h-[100px] bg-[#161d24]">
 			<div class="container max-w-[1200px] mx-auto">
 				<div
-					class="ml-[12%] flex h-[80px] w-[55.5%] float-left items-center text-[#fff5f5] uppercase font-sans mt-3"
+					class="ml-[17%] flex h-[80px] w-[55.5%] float-left items-center text-[#fff5f5] uppercase font-sans mt-3"
 				>
 					<img
 						class="w-40"
@@ -93,9 +93,9 @@ const { title } = Astro.props;
 			class="h-[480px] flex bg-center bg-cover bg-no-repeat max-h-full bg-[url('https://i.ytimg.com/vi/to-CTTvvnV0/maxresdefault.jpg')]"
 		>
 			<div
-				class="mt-6 menups pt-2- bg-[#0c426ed2] flex h-9 w-[50.5%] justify-between ml-[26%] items-center font-sans list-none px-2 font-medium text-white text-[14px]"
+				class="mx-auto max-w-[1200px] mt-6 menups bg-[#0c426ed2] flex h-9 w-[71%] ml-[23.5%] justify-between items-center font-sans list-none font-medium text-white text-[14px]"
 			>
-				<li><a class="" href="">Tu tienda</a></li>
+				<li><a class="pl-3" href="">Tu tienda</a></li>
 				<li><a class="" href="">Nuevo y destacable</a></li>
 				<li><a class="" href="">Categorias</a></li>
 				<li><a class="" href="">Tienda de puntos</a></li>
@@ -124,148 +124,134 @@ const { title } = Astro.props;
 				</button>
 			</div>
 		</div>
-		<div class="flex h-[480px] container max-w-[1200px] ml-[14%]">
-			<div
-				class="menu-opccion list-none h-[500px] w-[200px] font-sans mt-2"
-			>
-				<li class="mt-3 mb-4 hover:text-[white]">
-					<img
-						class="h-16"
-						src="https://store.akamai.steamstatic.com/public/images//gift/steamcards_promo_03.png?v=1"
-						alt=""
-					/>
+		<!-- TarjetasDeregalo -->
+		<div
+			class="float-left z-[1] left-[calc(((100%-1200px)/2)-180px)] w-[180px] h-[360px] ml-[7%] list-none"
+		>
+			<li class="mt-3 mb-4 hover:text-[white]">
+				<img
+					class="h-16"
+					src="https://store.akamai.steamstatic.com/public/images//gift/steamcards_promo_03.png?v=1"
+					alt=""
+				/>
 
-					<a href="">
-						<h1
-							class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
-						>
-							Targetas regalo de Steam
-						</h1>
-						<h1
-							class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
-						>
-							Regala diversion
-						</h1>
-					</a>
-				</li>
-				<li class="mt-3 mb-4">
+				<a href="">
 					<h1
 						class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
 					>
-						Vistos recientemente
+						Targetas regalo de Steam
 					</h1>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">juego1</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">juego2</a
-					>
-				</li>
-				<li class="mt-3 mb-4">
 					<h1
 						class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
 					>
-						recomedados
+						Regala diversion
 					</h1>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">amigos</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">mentores</a
-					>
-				</li>
-				<li class="mt-3 mb-4">
-					<h1
-						class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
-					>
-						Explorar Categorias
-					</h1>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">lo mas vendido</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">novedades</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">lo mas barato</a
-					>
-				</li>
-				<li class="mt-3 mb-4">
-					<h1
-						class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
-					>
-						explorar por generos
-					</h1>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">free to play</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">accion</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">aventura</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">aventura</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">aventura</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">aventura</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">aventura</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">aventura</a
-					>
-					<a
-						class="text-white flex hover:text-[blue] text-[13px]"
-						href="">aventura</a
-					>
-				</li>
-			</div>
+				</a>
+			</li>
+			<li class="mt-3 mb-4">
+				<h1
+					class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
+				>
+					Vistos recientemente
+				</h1>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>juego1</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>juego2</a
+				>
+			</li>
+			<li class="mt-3 mb-4">
+				<h1
+					class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
+				>
+					recomedados
+				</h1>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>amigos</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>mentores</a
+				>
+			</li>
+			<li class="mt-3 mb-4">
+				<h1
+					class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
+				>
+					Explorar Categorias
+				</h1>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>lo mas vendido</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>novedades</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>lo mas barato</a
+				>
+			</li>
+			<li class="mt-3 mb-4">
+				<h1
+					class="text-[#5e79f5] text-[15px] uppercase font-sans font-medium"
+				>
+					explorar por generos
+				</h1>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>free to play</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>accion</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>aventura</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>aventura</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>aventura</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>aventura</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>aventura</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>aventura</a
+				>
+				<a class="text-white flex hover:text-[blue] text-[13px]" href=""
+					>aventura</a
+				>
+			</li>
+		</div>
+		<!-- Destacado y recomendado -->
+		<div class="h-[480px] max-w-[1200px] mx-auto">
 			<div
-				class="recomendado w-[90%] h-[450px] mr-[4%] ml-[2%] bg-gradient-to-b via-[#1B2838] from-[#1B2838] to-blue-950 via-80%"
+				class="ml-[20%] w-[80%] h-[450px] bg-gradient-to-b via-[#1B2838] from-[#1B2838] to-blue-950 via-80%"
 			>
 				<h1
 					class="text-[15px] mb-1 ml-5 text-white mt-5 font-sans font-normal"
 				>
 					DESTACADOS Y RECOMENDADOS
 				</h1>
-				<div class="contenido flex list-none ml-5 font-serif">
+				<div class="contenido flex list-none font-serif justify-center items-center ">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-[60px] p-0 m-0 size-20 text-white absolute mr-[75%] bg-gradient-to-r via-blue-950 via-5% hover:cursor-pointer"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+					</svg>
 					<div
 						class="hover:cursor-pointer h-[360px] w-[60%] bg-[#fff5f5] bg-no-repeat bg-cover bg-[url('https://gaming-cdn.com/images/products/7678/orig/black-myth-wukong-pc-game-steam-europe-and-us-and-canada-cover.jpg?v=1724142714')] shadow-[3px_3px_8px_#00000066]"
 					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="size-20 absolute my-auto text-white :"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M15.75 19.5 8.25 12l7.5-7.5"></path>
-						</svg>
 					</div>
 					<a href="">
 						<div
@@ -317,27 +303,70 @@ const { title } = Astro.props;
 							</a>
 						</div>
 					</a>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-[60px] size-20 my-auto text-white absolute ml-[74%] cursor-pointer bg-gradient-to-l via-blue-950 via-5%"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+					</svg>
 				</div>
 			</div>
 		</div>
+		<!-- imgane ramdom -->
 		<div class="baner3 container max-w-[1200px] mx-auto font-sans mt-2">
 			<div class="contb1">
 				<a href="">
 					<img
-						class="container h-[150px] w-[80%] flex ml-[12%] shadow-[3px_3px_8px_#00000066] hover:shadow-blue-400"
+						class="container h-[150px] w-[80%] flex ml-[20%] shadow-[3px_3px_8px_#00000066] hover:shadow-blue-400"
 						src="https://shared.akamai.steamstatic.com/store_item_assets/steam/clusters/takeunder/67755ac165883e36b511f6ff/takeunder_desktop_spanish.jpg?t=1727285949"
 						alt=""
 					/>
 				</a>
 			</div>
+		</div>
+		<!-- ofertas especiales -->
+		<div class="max-w-[1200px] mx-auto">
 			<h1
-				class="ml-[12%] mt-10 font-medium text-white text-[15px] uppercase mb-3"
+				class="ml-[20%] mt-10 font-medium text-white text-[15px] uppercase mb-3 "
 			>
 				ofertas especiales
 			</h1>
-			<div class="ofertas ml-[12%] w-[80%] flex h-[400px]">
+			<div class="ofertas ml-[20%] w-[80%] flex h-[400px] justify-center items-center">
+				<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-[60px] size-20 text-white absolute mr-[74%] cursor-pointer bg-gradient-to-r from-blue-950 via-blue-950 via-5%"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+					</svg>
+					<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-[60px] size-20 my-auto text-white absolute cursor-pointer bg-gradient-to-l from-blue-950 via-blue-950 via-5% ml-[74%] "
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+				</svg>
 				<div
-					class="bg-gradient-to-b from-[#6fd1f5] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
+					class="bg-gradient-to-b from-[#6fd1f5] h-[390px] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
 				>
 					<img
 						class="h-[250px]"
@@ -371,7 +400,7 @@ const { title } = Astro.props;
 					</div>
 				</div>
 				<div
-					class="bg-gradient-to-b from-[#6fd1f5] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
+					class="bg-gradient-to-b from-[#6fd1f5] h-[390px] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
 				>
 					<img
 						class="h-[250px]"
@@ -455,16 +484,52 @@ const { title } = Astro.props;
 									col$ 45.000
 								</h1>
 							</div>
+							
 						</div>
+						
+						
 					</div>
+					
 				</div>
+				
 			</div>
-			<div class="mt-10 ml-[12%]">
+		</div>
+		<!-- explorar por categorias -->
+		<div class="max-w-[1200px] mx-auto font-sans mt-2" >
+			<div class="mt-10 ml-[20%] ">
 				<h1 class="text-white mb-3 font-medium text-[15px] uppercase">
 					Explorar por categorias
 				</h1>
+				
+				<div class="flex justify-center items-center gap-5">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="hover:cursor-pointer w-[60px] size-20 text-white absolute mr-[74%] bg-gradient-to-r from-blue-950 via-blue-950 via-5% "
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+					</svg>
+					<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="hover:cursor-pointer w-[60px] size-20 my-auto text-white absolute ml-[74%] bg-gradient-to-l from-blue-950 via-blue-950 via-5% "
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+				</svg>
 				<div
-					class="inline-flex items-end w-[225px] hover:cursor-pointer mr-4 h-[200px] hover:scale-110 duration-300 bg-cover bg-[url('https://i.3djuegos.com/juegos/17520/fotos/ficha/-5245513.webp')]"
+					class="inline-flex items-end w-[225px] hover:cursor-pointer h-[200px] hover:scale-110 duration-300 bg-cover bg-[url('https://i.3djuegos.com/juegos/17520/fotos/ficha/-5245513.webp')]"
 				>
 					<h1
 						class="uppercase bg-red-700 mx-auto mb-10 text-center text-white font-bold h-0"
@@ -473,7 +538,7 @@ const { title } = Astro.props;
 					</h1>
 				</div>
 				<div
-					class="inline-flex items-end w-[225px] mr-4 h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://shared.akamai.steamstatic.com//store_item_assets/steam/apps/1846380/hero_capsule.jpg?t=1725523430')]"
+					class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://shared.akamai.steamstatic.com//store_item_assets/steam/apps/1846380/hero_capsule.jpg?t=1725523430')]"
 				>
 					<h1
 						class="uppercase mb-10 mx-auto text-white font-bold h-0"
@@ -482,7 +547,7 @@ const { title } = Astro.props;
 					</h1>
 				</div>
 				<div
-					class="inline-flex items-end w-[225px] mr-4 h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQM8fOzeqkbIWza-KJ3ieXmENymf98AeHBgQ&s')]"
+					class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQM8fOzeqkbIWza-KJ3ieXmENymf98AeHBgQ&s')]"
 				>
 					<h1
 						class="uppercase bg-blue-100 mx-auto mb-10 text-white font-bold h-0"
@@ -491,7 +556,7 @@ const { title } = Astro.props;
 					</h1>
 				</div>
 				<div
-					class="inline-flex items-end w-[225px] mr-4 h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://media.revistagq.com/photos/628f7826a66472e9837148e9/16:9/w_2560%2Cc_limit/The%2520Quarry%2520-%2520Key%2520Art%25204K.jpg')]"
+					class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://media.revistagq.com/photos/628f7826a66472e9837148e9/16:9/w_2560%2Cc_limit/The%2520Quarry%2520-%2520Key%2520Art%25204K.jpg')]"
 				>
 					<h1
 						class="uppercase bg-blue-100 mb-10 mx-auto text-white font-bold h-0"
@@ -501,9 +566,12 @@ const { title } = Astro.props;
 				</div>
 			</div>
 		</div>
+		</div>
+		
+		<!-- iniciar sesion -->
 		<div class="max-w-[1200px] mx-auto">
 			<div
-				class="h-[150px] w-[80%] bg-[#000F18] mt-8 ml-[12%] flex flex-col items-center"
+				class="h-[150px] w-[80%] bg-[#000F18] mt-8 ml-[20%] flex flex-col items-center"
 			>
 				<h1 class="text-gray-400 font-semibold pt-5 font-sans pb-5">
 					Inicia sesión para ver recomendaciones personalizadas
@@ -517,15 +585,18 @@ const { title } = Astro.props;
 				</h1>
 			</div>
 		</div>
+		<!-- explorar Steam -->
 		<div class="max-w-[1200px] mx-auto mt-6">
-			<h1 class="ml-[12%] text-white font-medium uppercase mb-2">
+			<h1 class="ml-[20%] text-white font-medium uppercase mb-2">
 				Explorar Steam
 			</h1>
-			<div class="w-[80%] ml-[12%] flex gap-2">
+			<div class="w-[80%] ml-[20%] flex gap-2">
 				<div
 					class="h-[70px] w-[300px] rounded bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-b hover:cursor-pointer flex justify-center items-center"
 				>
-					<h1 class="text-white font-sans font-semibold text-[20px] uppercase">
+					<h1
+						class="text-white font-sans font-semibold text-[20px] uppercase"
+					>
 						novedades
 					</h1>
 				</div>
