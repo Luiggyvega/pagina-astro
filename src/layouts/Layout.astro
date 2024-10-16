@@ -90,10 +90,10 @@ const { title } = Astro.props;
 		</header>
 
 		<div
-			class="h-[480px] flex bg-center bg-cover bg-no-repeat max-h-full bg-[url('https://i.ytimg.com/vi/to-CTTvvnV0/maxresdefault.jpg')]"
+			class="h-[480px] flex bg-center bg-cover bg-no-repeat max-h-full object-cover bg-[url('https://i.ytimg.com/vi/to-CTTvvnV0/maxresdefault.jpg')] relative"
 		>
 			<div
-				class="mx-auto max-w-[1200px] mt-6 menups bg-[#0c426ed2] flex h-9 w-[71%] ml-[23.5%] justify-between items-center font-sans list-none font-medium text-white text-[14px]"
+				class="absolute mx-auto max-w-[1200px] mt-6 menups bg-[#0c426ed2] flex h-9 w-[990px] left-72 justify-between items-center font-sans list-none font-medium text-white text-[14px]"
 			>
 				<li><a class="pl-3" href="">Tu tienda</a></li>
 				<li><a class="" href="">Nuevo y destacable</a></li>
@@ -235,29 +235,61 @@ const { title } = Astro.props;
 				>
 					DESTACADOS Y RECOMENDADOS
 				</h1>
-				<div class="contenido flex list-none font-serif justify-center items-center ">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="w-[60px] p-0 m-0 size-20 text-white absolute mr-[75%] bg-gradient-to-r via-blue-950 via-5% hover:cursor-pointer"
+				<div
+					class="justify-center items-center relative overflow-x-hidden shadow-2xl shadow-gray-900"
+				>
+					<button
+						class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10"
 					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M15.75 19.5 8.25 12l7.5-7.5"></path>
-					</svg>
-					<div
-						class="hover:cursor-pointer h-[360px] w-[60%] bg-[#fff5f5] bg-no-repeat bg-cover bg-[url('https://gaming-cdn.com/images/products/7678/orig/black-myth-wukong-pc-game-steam-europe-and-us-and-canada-cover.jpg?v=1724142714')] shadow-[3px_3px_8px_#00000066]"
-					>
-					</div>
-					<a href="">
-						<div
-							class="h-[360px] w-[40%] bg-gray-900 shadow-[3px_3px_8px_#00000066]"
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-[60px] size-20 text-white cursor-pointer bg-gradient-to-r from-blue-950 via-blue-950 via-5%"
+							id="btn-lef"
 						>
-							<a href="">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+						</svg>
+					</button>
+
+					<button
+						class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-[60px] size-20 text-white cursor-pointer bg-gradient-to-l from-blue-950 via-blue-950 via-5%"
+							id="btn-aft"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+						</svg>
+					</button>
+					<div
+						class="contenido flex list-none font-serifrelative w-[300%] animate-slider transition duration-500 "
+						id="slider"
+					>
+						<section
+							class="flex w-[calc(100%/3)]"
+							id="sliderSection"
+						>
+							<div
+								class="hover:cursor-pointer h-[360px] w-[60%] bg-[#fff5f5] bg-no-repeat bg-cover bg-[url('https://gaming-cdn.com/images/products/7678/orig/black-myth-wukong-pc-game-steam-europe-and-us-and-canada-cover.jpg?v=1724142714')] shadow-[3px_3px_8px_#00000066]"
+							>
+							</div>
+							<div
+								class="h-[360px] w-[40%] bg-gray-900 shadow-[3px_3px_8px_#00000066] hover:cursor-pointer"
+							>
 								<li
 									class="mt-2 mb-2 text-[20px] ml-5 text-[#fff5f5]"
 								>
@@ -300,25 +332,168 @@ const { title } = Astro.props;
 								>
 									COL$ 199.000
 								</h3>
-							</a>
-						</div>
-					</a>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="w-[60px] size-20 my-auto text-white absolute ml-[74%] cursor-pointer bg-gradient-to-l via-blue-950 via-5%"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
-					</svg>
+							</div>
+						</section>
+						<section
+							class="flex w-[calc(100%/3)]"
+							id="sliderSection"
+						>
+							<div
+								class="hover:cursor-pointer h-[360px] w-[60%] bg-[#fff5f5] bg-no-repeat bg-cover bg-[url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933620/header.jpg?t=1729019912')] shadow-[3px_3px_8px_#00000066]"
+							>
+							</div>
+							<div
+								class="h-[360px] w-[40%] bg-gray-900 shadow-[3px_3px_8px_#00000066] hover:cursor-pointer"
+							>
+								<li
+									class="mt-2 mb-2 text-[20px] ml-5 text-[#fff5f5]"
+								>
+								Call of Duty®: Black Ops 6
+								</li>
+								<div class="flex flex-wrap">
+									<img
+										class="h-[80px] w-[180px] mb-2"
+										src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933620/ss_fc8d4d4057bd8c4d519dc98bbee725907ab1b7d2.1920x1080.jpg?t=1729019912"
+										alt=""
+									/>
+									<img
+										class="h-[80px] w-[180px] mb-2 ml-2"
+										src="https://cdn2.unrealengine.com/gs-screenshot-015-3840x2160-53080145a0c4.jpg?resize=1&w=1920"
+										alt=""
+									/>
+									<img
+										class="h-[80px] w-[180px] mb-2"
+										src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933620/ss_02e975ce63d961123d36c8bc03a04f5b9c862e5d.1920x1080.jpg?t=1729019912"
+										alt=""
+									/>
+									<img
+										class="h-[80px] w-[180px] mb-2 ml-2"
+										src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933620/ss_79d96d702d6656cfd8e34ddb6d457840ecf46bf5.1920x1080.jpg?t=1729019912"
+										alt=""
+									/>
+								</div>
+								<h1
+									class="text-[20px] text-[#fff5f5] ml-5 my-0"
+								>
+									Ya disponible
+								</h1>
+								<h2
+									class="text-[14px] h-5 w-28 bg-gray-400 text-center ml-5 rounded text-[#fff5f5]"
+								>
+									Lo mas vendido
+								</h2>
+								<h3
+									class="ml-5 mb-3 text-[13px] text-[#fff5f5] mt-11 font-sans"
+								>
+									COL$ 199.000
+								</h3>
+							</div>
+						</section>
+						<section
+							class="flex w-[calc(100%/3)]"
+							id="sliderSection"
+						>
+							<div
+								class="hover:cursor-pointer h-[360px] w-[60%] bg-[#fff5f5] bg-contain bg-[url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/header.jpg?t=1728899148')] shadow-[3px_3px_8px_#00000066]"
+							>
+							</div>
+							<div
+								class="h-[360px] w-[40%] bg-gray-900 shadow-[3px_3px_8px_#00000066] hover:cursor-pointer"
+							>
+								<li
+									class="mt-2 mb-2 text-[20px] ml-5 text-[#fff5f5]"
+								>
+								DRAGON BALL: Sparking! ZERO
+								</li>
+								<div class="flex flex-wrap">
+									<img
+										class="h-[80px] w-[180px] mb-2"
+										src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_72cb10fb8f0c7554e932257450b19189534a846d.1920x1080.jpg?t=1728899148"
+										alt=""
+									/>
+									<img
+										class="h-[80px] w-[180px] mb-2 ml-2"
+										src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_6389b6aef0ecaa3f6cc1e36dcfb145c6fcb70a75.1920x1080.jpg?t=1728899148"
+										alt=""
+									/>
+									<img
+										class="h-[80px] w-[180px] mb-2"
+										src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_90f5785f89a9882a7f33fd5a812a7e7384720afd.1920x1080.jpg?t=1728899148"
+										alt=""
+									/>
+									<img
+										class="h-[80px] w-[180px] mb-2 ml-2"
+										src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_f4ec953421c54bf74bdca77ceed361ad7b509858.1920x1080.jpg?t=1728899148"
+										alt=""
+									/>
+								</div>
+								<h1
+									class="text-[20px] text-[#fff5f5] ml-5 my-0"
+								>
+									Ya disponible
+								</h1>
+								<h2
+									class="text-[14px] h-5 w-28 bg-gray-400 text-center ml-5 rounded text-[#fff5f5]"
+								>
+									Lo mas nuevo
+								</h2>
+								<h3
+									class="ml-5 mb-3 text-[13px] text-[#fff5f5] mt-11 font-sans"
+								>
+									COL$ 220.000
+								</h3>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="flex justify-center items-center gap-1 mt-4">
+					<div class="h-4 bg-gray-800 w-7 rounded"></div>
+					<div class="h-4 bg-gray-800 w-7 rounded"></div>
+					<div class="h-4 bg-gray-800 w-7 rounded"></div>
 				</div>
 			</div>
+			
 		</div>
+		<script>
+			// Seleccionar los elementos del DOM
+			const btnlef = document.querySelector("#btn-lef");
+			const btnaft = document.querySelector("#btn-aft");
+			const slider = document.querySelector("#slider");
+
+			// Número de sliders (en este caso son 3)
+			const totalSlides = 3;
+
+			// Ancho de cada slide (100% / número de sliders visibles a la vez)
+			const slideWidth = 100 / totalSlides;
+
+			// Índice actual del slider
+			let currentSlide = 0;
+
+			// Función para moverse hacia la derecha
+			function moveToNextSlide() {
+				currentSlide++;
+				if (currentSlide >= totalSlides) {
+					// Si llegamos al final, volvemos al primer slide
+					currentSlide = 0;
+				}
+				slider.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+				
+			}
+
+			// Función para moverse hacia la izquierda
+			function moveToPreviousSlide() {
+				currentSlide--;
+				if (currentSlide < 0) {
+					// Si estamos en el primer slide, vamos al último
+					currentSlide = totalSlides - 1;
+				}
+				slider.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+			}
+
+			// Eventos de los botones
+			btnlef.addEventListener("click", moveToPreviousSlide);
+			btnaft.addEventListener("click", moveToNextSlide);
+		</script>
 		<!-- imgane ramdom -->
 		<div class="baner3 container max-w-[1200px] mx-auto font-sans mt-2">
 			<div class="contb1">
@@ -334,31 +509,33 @@ const { title } = Astro.props;
 		<!-- ofertas especiales -->
 		<div class="max-w-[1200px] mx-auto">
 			<h1
-				class="ml-[20%] mt-10 font-medium text-white text-[15px] uppercase mb-3 "
+				class="ml-[20%] mt-10 font-medium text-white text-[15px] uppercase mb-3"
 			>
 				ofertas especiales
 			</h1>
-			<div class="ofertas ml-[20%] w-[80%] flex h-[400px] justify-center items-center">
+			<div
+				class="ofertas ml-[20%] w-[80%] flex h-[400px] justify-center items-center relative"
+			>
 				<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="w-[60px] size-20 text-white absolute mr-[74%] cursor-pointer bg-gradient-to-r from-blue-950 via-blue-950 via-5%"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M15.75 19.5 8.25 12l7.5-7.5"></path>
-					</svg>
-					<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 24 24"
 					stroke-width="1.5"
 					stroke="currentColor"
-					class="w-[60px] size-20 my-auto text-white absolute cursor-pointer bg-gradient-to-l from-blue-950 via-blue-950 via-5% ml-[74%] "
+					class="w-[60px] size-20 text-white absolute -left-12 cursor-pointer bg-gradient-to-r from-blue-950 via-blue-950 via-5%"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+				</svg>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-[60px] size-20 my-auto text-white -right-12 absolute cursor-pointer bg-gradient-to-l from-blue-950 via-blue-950 via-5%"
 				>
 					<path
 						stroke-linecap="round"
@@ -484,31 +661,26 @@ const { title } = Astro.props;
 									col$ 45.000
 								</h1>
 							</div>
-							
 						</div>
-						
-						
 					</div>
-					
 				</div>
-				
 			</div>
 		</div>
 		<!-- explorar por categorias -->
-		<div class="max-w-[1200px] mx-auto font-sans mt-2" >
-			<div class="mt-10 ml-[20%] ">
+		<div class="max-w-[1200px] mx-auto font-sans mt-2">
+			<div class="mt-10 ml-[20%]">
 				<h1 class="text-white mb-3 font-medium text-[15px] uppercase">
 					Explorar por categorias
 				</h1>
-				
-				<div class="flex justify-center items-center gap-5">
+
+				<div class="flex justify-center items-center gap-5 relative">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="hover:cursor-pointer w-[60px] size-20 text-white absolute mr-[74%] bg-gradient-to-r from-blue-950 via-blue-950 via-5% "
+						class="hover:cursor-pointer w-[60px] size-20 text-white absolute -left-12 bg-gradient-to-r from-blue-950 via-blue-950 via-5%"
 					>
 						<path
 							stroke-linecap="round"
@@ -516,58 +688,58 @@ const { title } = Astro.props;
 							d="M15.75 19.5 8.25 12l7.5-7.5"></path>
 					</svg>
 					<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					class="hover:cursor-pointer w-[60px] size-20 my-auto text-white absolute ml-[74%] bg-gradient-to-l from-blue-950 via-blue-950 via-5% "
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
-				</svg>
-				<div
-					class="inline-flex items-end w-[225px] hover:cursor-pointer h-[200px] hover:scale-110 duration-300 bg-cover bg-[url('https://i.3djuegos.com/juegos/17520/fotos/ficha/-5245513.webp')]"
-				>
-					<h1
-						class="uppercase bg-red-700 mx-auto mb-10 text-center text-white font-bold h-0"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="hover:cursor-pointer w-[60px] size-20 my-auto text-white absolute -right-12 bg-gradient-to-l from-blue-950 via-blue-950 via-5%"
 					>
-						casuales
-					</h1>
-				</div>
-				<div
-					class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://shared.akamai.steamstatic.com//store_item_assets/steam/apps/1846380/hero_capsule.jpg?t=1725523430')]"
-				>
-					<h1
-						class="uppercase mb-10 mx-auto text-white font-bold h-0"
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+					</svg>
+					<div
+						class="inline-flex items-end w-[225px] hover:cursor-pointer h-[200px] hover:scale-110 duration-300 bg-cover bg-[url('https://i.3djuegos.com/juegos/17520/fotos/ficha/-5245513.webp')]"
 					>
-						CARRERAS
-					</h1>
-				</div>
-				<div
-					class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQM8fOzeqkbIWza-KJ3ieXmENymf98AeHBgQ&s')]"
-				>
-					<h1
-						class="uppercase bg-blue-100 mx-auto mb-10 text-white font-bold h-0"
+						<h1
+							class="uppercase bg-red-700 mx-auto mb-10 text-center text-white font-bold h-0"
+						>
+							casuales
+						</h1>
+					</div>
+					<div
+						class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://shared.akamai.steamstatic.com//store_item_assets/steam/apps/1846380/hero_capsule.jpg?t=1725523430')]"
 					>
-						aventuras
-					</h1>
-				</div>
-				<div
-					class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://media.revistagq.com/photos/628f7826a66472e9837148e9/16:9/w_2560%2Cc_limit/The%2520Quarry%2520-%2520Key%2520Art%25204K.jpg')]"
-				>
-					<h1
-						class="uppercase bg-blue-100 mb-10 mx-auto text-white font-bold h-0"
+						<h1
+							class="uppercase mb-10 mx-auto text-white font-bold h-0"
+						>
+							CARRERAS
+						</h1>
+					</div>
+					<div
+						class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQM8fOzeqkbIWza-KJ3ieXmENymf98AeHBgQ&s')]"
 					>
-						terror
-					</h1>
+						<h1
+							class="uppercase bg-blue-100 mx-auto mb-10 text-white font-bold h-0"
+						>
+							aventuras
+						</h1>
+					</div>
+					<div
+						class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://media.revistagq.com/photos/628f7826a66472e9837148e9/16:9/w_2560%2Cc_limit/The%2520Quarry%2520-%2520Key%2520Art%25204K.jpg')]"
+					>
+						<h1
+							class="uppercase bg-blue-100 mb-10 mx-auto text-white font-bold h-0"
+						>
+							terror
+						</h1>
+					</div>
 				</div>
 			</div>
 		</div>
-		</div>
-		
+
 		<!-- iniciar sesion -->
 		<div class="max-w-[1200px] mx-auto">
 			<div
@@ -665,288 +837,3 @@ const { title } = Astro.props;
 		</div>
 	</body>
 </html>
-<style>
-	html,
-	body {
-		background-color: rgb(24, 48, 68);
-	}
-	/* header {
-		height: 100px;
-		background: #161d24;
-	} */
-	/* .container {
-		margin: 0 auto;
-		max-width: 1200px;
-	} */
-	/* .flex-menu {
-		display: flex;
-		height: 80px;
-		width: 60%;
-		float: left;
-		align-items: center;
-		color: #fff5f5;
-		font-family: sans-serif;
-		text-transform: uppercase;
-	} */
-	/* .flex-menu li {
-		margin-left: 10px;
-		list-style: none;
-		display: inline-block;
-	} */
-	/* .flex-menu a {
-		font-weight: 600;
-		color: #fff5f5;
-		text-decoration: none;
-	}
-	.flex-menu a:hover {
-		color: #ffffff;
-	}
-	.flex-menu img {
-		width: 180px;
-	}
-	.menu-rigth {
-		float: left;
-		width: 40%;
-		color: #fff5f5;
-		font-family: sans-serif;
-		margin-top: 5px;
-	}
-	.menu-rigth a {
-		text-decoration: none;
-		color: #b3b3b3;
-		margin: 0 6px;
-		font-size: 13px;
-	} */
-	/* .btn-download {
-		color: #ffffff;
-		background-color: rgb(37, 172, 37);
-		display: inline-block;
-		padding: 4px 10px;
-		font-family: sans-serif;
-		text-decoration: none;
-		display: inline-flex;
-		align-items: center;
-		gap: 6px;
-	}
-
-	.btn-download svg {
-		height: 18px;
-	}
-	.btn-download:hover {
-		background-color: rgb(95, 255, 95);
-	}*/
-	/* 
-	.baner {
-		background-image: url(https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_616x353.jpg?t=1726590088);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		height: 480px;
-		display: flex;
-	}
-
-	.menups {
-		margin-top: 30px;
-		background-color: rgba(63, 80, 236, 0.418);
-		display: flex;
-		height: 35px;
-		width: 60%;
-		justify-content: space-between;
-		margin-left: 25%;
-		align-items: center;
-		font-family: sans-serif;
-		list-style-type: none;
-	}
-	.menups a {
-		margin-left: 10px;
-		list-style: none;
-		display: inline-block;
-		font-size: 14px;
-		font-weight: 500px;
-		color: antiquewhite;
-		text-decoration: none;
-	}
-		*/
-	/* .menups input {
-		margin-left: 40px;
-		margin-right: 5px;
-		background: rgb(35, 45, 99);
-		color: #161d24;
-		height: 25px;
-		border-radius: 6px;
-		border: 0;
-	} */
-
-	/* .baner2 {
-		height: 370px;
-		display: flex;
-	}
-
-	.menu-opccion {
-		height: 500px;
-		width: 200px;
-		flex-wrap: wrap;
-		list-style-type: none;
-		font-family: sans-serif;
-	}
-	.menu-opccion li {
-		margin-top: 10px;
-		margin-bottom: 30px;
-	}
-	.menu-opccion h1 {
-		color: #5e79f5;
-		font-size: 14px;
-		font-weight: 500px;
-	}
-	.menu-opccion a > h1:hover {
-		color: #fff5f5;
-	}
-	.menu-opccion a {
-		font-weight: 500px;
-		text-decoration: none;
-		color: #fff5f5;
-		display: block;
-		font-size: 13px;
-	}
-	.menu-opccion a:hover {
-		color: #2e80fc;
-	}
-	.menu-opccion li h1,
-	.menu-opccion li a {
-		margin: 0; 
-	} */
-	/* .recomendado {
-		width: 100%;
-		font-family: sans-serif;
-		display: block; 
-	}
-
-	.recomendado h1 {
-		font-size: 15px;
-		margin-bottom: 10px;
-		margin-left: 20px;
-		color: #fff5f5;
-		font-weight: 200;
-	} */
-
-	/* .contenido {
-		display: flex;
-		list-style-type: none;
-		margin-left: 20px;
-		font-family: sans-serif;
-	}
-
-	.cara {
-		height: 320px;
-		width: 60%;
-		background-color: #fff5f5;
-		background-image: url("https://gaming-cdn.com/images/products/7678/orig/black-myth-wukong-pc-game-steam-europe-and-us-and-canada-cover.jpg?v=1724142714");
-		background-size: cover;
-		background-position: center;
-		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-	} */
-
-	/* .caritas {
-		height: 320px;
-		width: 40%;
-		margin: 0;
-		background: rgb(27, 40, 56);
-		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-	}
-	.caritas a {
-		text-decoration: none;
-	}
-	.caritas li {
-		margin-top: 10px;
-		margin-bottom: 20px;
-		font-size: 20px;
-		margin-left: 20px;
-		color: #fff5f5;
-	}
-	.caritas h1,
-	.caritas h2 {
-		margin: 0;
-		margin-left: 20px;
-	}
-	.caritas h1 {
-		font-size: 20px;
-	}
-	.caritas h2 {
-		border: 0;
-		border-color: #161d24;
-		color: #fff5f5;
-		height: 18px;
-		border-radius: 5%;
-		width: 120px;
-		font-size: 14px;
-		text-align: center;
-		background: gray;
-	}
-	.caritas h3 {
-		margin-left: 20px;
-		margin-bottom: 10px;
-		font-size: 11px;
-		color: #fff5f5;
-	}
-
-	.caritas img {
-		height: 80px;
-		width: 180px;
-		margin-left: 10px;
-		margin-bottom: 10px;
-	} */
-
-	/* .baner3 {
-		background: rgba(1, 9, 32, 0.486); 
-		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-		height: 1000px;
-		position: relative; 
-	}
-	.baner3 a {
-		text-decoration: none;
-	}
-
-	.contb1 {
-		height: 200px;
-		display: flex;
-		padding-top: 20px; 
-		} */
-
-	/* .contb1 img {
-		height: 200px;
-		width: 1000px;
-		margin-left: 25%;
-		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-	}
-	.contb1 img : :hover {
-		box-shadow: 0 4px 15px rgba(255, 165, 0, 0.6);
-	}
-	.baner3 h1 {
-		font-family: sans-serif;
-		margin-left: 20%;
-		font-size: 20px;
-		font-weight: 50px;
-		margin-top: 40px;
-	}
-	.ofertas {
-		margin-top: 5px;
-		margin-left: 20%;
-		height: 350px;
-		width: 1000px;
-		margin: 1px solid;
-		display: flex;
-	} */
-	/* .oferta1 {
-		height: auto;
-		width: 325px;
-		margin-right: 10px;
-		border: 1px solid;
-	}
-	.oferta2 {
-		flex-direction: column;
-		border: 1px solid;
-		height: 168px;
-		width: 325px;
-		margin-bottom: 10px;
-	} */
-</style>
