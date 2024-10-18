@@ -18,10 +18,10 @@ const { title } = Astro.props;
 	<body class="m-0 p-0 bg-[#1B2838]">
 		<!-- etiquetas semanticas?? -->
 		<!-- <slot />  -->
-		<header class="h-[100px] bg-[#161d24]">
-			<div class="container max-w-[1200px] mx-auto">
+		<header class="h-[100px] bg-[#161d24] mx-auto">
+			<div class="w-[965px] mx-auto flex justify-center">
 				<div
-					class="ml-[17%] flex h-[80px] w-[55.5%] float-left items-center text-[#fff5f5] uppercase font-sans mt-3"
+					class="flex h-[80px] w-[60%] justify-star float-left items-center text-[#fff5f5] uppercase font-sans mt-3"
 				>
 					<img
 						class="w-40"
@@ -30,7 +30,7 @@ const { title } = Astro.props;
 					/>
 
 					<menu>
-						<li class="ml-[10px] inline-block">
+						<li class="inline-block">
 							<a
 								class="text-[16px] font-semibold text-[#fff5f5] hover:text-[blue]"
 								href="">Tienda</a
@@ -57,11 +57,11 @@ const { title } = Astro.props;
 					</menu>
 				</div>
 				<div
-					class="float-left text-[#fff5f5] font-sans mt-1 items-center"
+					class="float-left text-[#fff5f5] font-sans mt-1 w-[40%] flex justify-end"
 				>
 					<a
 						href="#####"
-						class="btn-download text-[#fff5f5] text-[13px] bg-green-700 py-[2px] px-3 inline-flex hover:text-[white] hover:bg-green-900"
+						class="btn-download px-2 h-6 justify-center items-center text-[#fff5f5] text-[13px] bg-green-700 inline-flex hover:text-[white] hover:bg-green-900"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -90,10 +90,10 @@ const { title } = Astro.props;
 		</header>
 
 		<div
-			class="h-[480px] flex bg-center bg-cover bg-no-repeat max-h-full object-cover bg-[url('https://i.ytimg.com/vi/to-CTTvvnV0/maxresdefault.jpg')] relative"
+			class="h-[480px] flex bg-center bg-cover bg-no-repeat max-h-full object-cover bg-[url('https://i.ytimg.com/vi/to-CTTvvnV0/maxresdefault.jpg')] justify-center"
 		>
 			<div
-				class="absolute mx-auto max-w-[1200px] mt-6 menups bg-[#0c426ed2] flex h-9 w-[990px] left-72 justify-between items-center font-sans list-none font-medium text-white text-[14px]"
+				class="mx-auto mt-6 menups bg-[#0c426ed2] flex h-9 w-[965px] justify-between items-center font-sans list-none font-medium text-white text-[14px]"
 			>
 				<li><a class="pl-3" href="">Tu tienda</a></li>
 				<li><a class="" href="">Nuevo y destacable</a></li>
@@ -102,7 +102,7 @@ const { title } = Astro.props;
 				<li><a class="" href="">Noticas</a></li>
 				<li><a class="" href="">Laboratorios</a></li>
 				<input
-					class="ml-10 mr-1 bg-[#232d63] text-[#161d24] h-6 rounded-md"
+					class="ml-8 mr-1 bg-[#232d63] text-[#161d24] h-6 rounded-md"
 					type="text"
 					placeholder="buscar"
 				/>
@@ -126,7 +126,7 @@ const { title } = Astro.props;
 		</div>
 		<!-- TarjetasDeregalo -->
 		<div
-			class="float-left z-[1] left-[calc(((100%-1200px)/2)-180px)] w-[180px] h-[360px] ml-[7%] list-none"
+			class="float-left left-[calc(((100%-1200px)/2)-180px)] w-[180px] h-[360px] list-none justify-center"
 		>
 			<li class="mt-3 mb-4 hover:text-[white]">
 				<img
@@ -228,55 +228,46 @@ const { title } = Astro.props;
 		<!-- Destacado y recomendado -->
 		<div class="h-[480px] max-w-[1200px] mx-auto">
 			<div
-				class="ml-[20%] w-[80%] h-[450px] bg-gradient-to-b via-[#1B2838] from-[#1B2838] to-blue-950 via-80%"
+				class="justify-center mx-auto w-[80%] h-[450px] bg-gradient-to-b via-[#1B2838] from-[#1B2838] to-blue-950 via-80% relative"
 			>
 				<h1
-					class="text-[15px] mb-1 ml-5 text-white mt-5 font-sans font-normal"
+					class="text-[15px] mb-1 text-white mt-5 font-sans font-normal"
 				>
 					DESTACADOS Y RECOMENDADOS
 				</h1>
-				<div
-					class="justify-center items-center relative overflow-x-hidden shadow-2xl shadow-gray-900"
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-[60px] size-20 text-white absolute -left-12 cursor-pointer bg-gradient-to-r from-blue-950 via-blue-950 via-5% top-[40%] hover:via-[#f1eaea5b]"
+					id="btn-lef"
 				>
-					<button
-						class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="w-[60px] size-20 text-white cursor-pointer bg-gradient-to-r from-blue-950 via-blue-950 via-5%"
-							id="btn-lef"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M15.75 19.5 8.25 12l7.5-7.5"></path>
-						</svg>
-					</button>
-
-					<button
-						class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="w-[60px] size-20 text-white cursor-pointer bg-gradient-to-l from-blue-950 via-blue-950 via-5%"
-							id="btn-aft"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
-						</svg>
-					</button>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+				</svg>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-[60px] size-20 my-auto text-white -right-12 absolute cursor-pointer bg-gradient-to-l from-blue-950 via-blue-950 via-5% top-[40%] hover:via-[#f1eaea5b] "
+					id="btn-aft"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+				</svg>
+				<div
+					class="justify-center items-center overflow-x-hidden shadow-2xl shadow-gray-900 overflow-y-hidden"
+				>
 					<div
-						class="contenido flex list-none font-serifrelative w-[300%] animate-slider transition duration-500 "
+						class="contenido flex list-none font-serif w-[300%] transition duration-500"
 						id="slider"
 					>
 						<section
@@ -348,7 +339,7 @@ const { title } = Astro.props;
 								<li
 									class="mt-2 mb-2 text-[20px] ml-5 text-[#fff5f5]"
 								>
-								Call of Duty®: Black Ops 6
+									Call of Duty®: Black Ops 6
 								</li>
 								<div class="flex flex-wrap">
 									<img
@@ -403,7 +394,7 @@ const { title } = Astro.props;
 								<li
 									class="mt-2 mb-2 text-[20px] ml-5 text-[#fff5f5]"
 								>
-								DRAGON BALL: Sparking! ZERO
+									DRAGON BALL: Sparking! ZERO
 								</li>
 								<div class="flex flex-wrap">
 									<img
@@ -446,13 +437,12 @@ const { title } = Astro.props;
 						</section>
 					</div>
 				</div>
-				<div class="flex justify-center items-center gap-1 mt-4">
+				<div class="flex justify-center items-center gap-1 mt-4" id="posicion">
 					<div class="h-4 bg-gray-800 w-7 rounded"></div>
 					<div class="h-4 bg-gray-800 w-7 rounded"></div>
 					<div class="h-4 bg-gray-800 w-7 rounded"></div>
 				</div>
 			</div>
-			
 		</div>
 		<script>
 			// Seleccionar los elementos del DOM
@@ -477,7 +467,6 @@ const { title } = Astro.props;
 					currentSlide = 0;
 				}
 				slider.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
-				
 			}
 
 			// Función para moverse hacia la izquierda
@@ -489,6 +478,7 @@ const { title } = Astro.props;
 				}
 				slider.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
 			}
+			
 
 			// Eventos de los botones
 			btnlef.addEventListener("click", moveToPreviousSlide);
@@ -499,7 +489,7 @@ const { title } = Astro.props;
 			<div class="contb1">
 				<a href="">
 					<img
-						class="container h-[150px] w-[80%] flex ml-[20%] shadow-[3px_3px_8px_#00000066] hover:shadow-blue-400"
+						class="justify-center items-center mx-auto container h-[150px] w-[80%] flex shadow-[3px_3px_8px_#00000066] hover:shadow-blue-400"
 						src="https://shared.akamai.steamstatic.com/store_item_assets/steam/clusters/takeunder/67755ac165883e36b511f6ff/takeunder_desktop_spanish.jpg?t=1727285949"
 						alt=""
 					/>
@@ -509,12 +499,12 @@ const { title } = Astro.props;
 		<!-- ofertas especiales -->
 		<div class="max-w-[1200px] mx-auto">
 			<h1
-				class="ml-[20%] mt-10 font-medium text-white text-[15px] uppercase mb-3"
+				class="mt-10 font-medium text-white text-[15px] uppercase mb-3 w-[80%] justify-center mx-auto"
 			>
 				ofertas especiales
 			</h1>
 			<div
-				class="ofertas ml-[20%] w-[80%] flex h-[400px] justify-center items-center relative"
+				class="ofertas w-[80%] flex h-[400px] justify-center items-center relative mx-auto"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -522,7 +512,8 @@ const { title } = Astro.props;
 					viewBox="0 0 24 24"
 					stroke-width="1.5"
 					stroke="currentColor"
-					class="w-[60px] size-20 text-white absolute -left-12 cursor-pointer bg-gradient-to-r from-blue-950 via-blue-950 via-5%"
+					class="size-20 w-[60px] text-white absolute -left-12 cursor-pointer bg-gradient-to-r from-blue-950 via-blue-950 via-5% hover:via-[#f1eaea5b]"
+					id="btn-lef2"
 				>
 					<path
 						stroke-linecap="round"
@@ -535,152 +526,476 @@ const { title } = Astro.props;
 					viewBox="0 0 24 24"
 					stroke-width="1.5"
 					stroke="currentColor"
-					class="w-[60px] size-20 my-auto text-white -right-12 absolute cursor-pointer bg-gradient-to-l from-blue-950 via-blue-950 via-5%"
+					class="w-[60px] size-20 my-auto text-white -right-12 absolute cursor-pointer bg-gradient-to-l from-blue-950 via-blue-950 via-5% hover:via-[#f1eaea5b]"
+					id="btn-aft2"
 				>
 					<path
 						stroke-linecap="round"
 						stroke-linejoin="round"
 						d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
 				</svg>
-				<div
-					class="bg-gradient-to-b from-[#6fd1f5] h-[390px] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
-				>
-					<img
-						class="h-[250px]"
-						src="https://phantom-marca.unidadeditorial.es/a1971afbd9030f3979dbb1dc2989a139/resize/1200/f/jpg/assets/multimedia/imagenes/2023/08/14/16920229037351.jpg"
-						alt=""
-					/>
-					<h1
-						class="text-white text-[15px] ml-[20px] mt-2 uppercase font-sans"
-					>
-						Oferta de entre semana
-					</h1>
-					<h2 class="text-blue-300 mt-2 font-sans text-[14px] ml-5">
-						la oferta termina el 30 de septiembre
-					</h2>
-					<div class="h-[40px] w-[200px] ml-5 mt-2 flex">
-						<h1
-							class="text-[30px] flex font-semibold text-[#3aff09] bg-[#5ba32b]"
-						>
-							-80%
-						</h1>
-						<div class="bg-slate-500">
-							<h1
-								class="text-gray-700 text-[10px] ml-8 uppercase line-through"
-							>
-								col$ 229.000
-							</h1>
-							<h1 class="uppercase text-[#3aff09] ml-2">
-								col$ 45.000
-							</h1>
-						</div>
-					</div>
-				</div>
-				<div
-					class="bg-gradient-to-b from-[#6fd1f5] h-[390px] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
-				>
-					<img
-						class="h-[250px]"
-						src="https://images5.alphacoders.com/981/981500.jpg"
-						alt=""
-					/>
-					<h1
-						class="text-white text-[15px] ml-[20px] mt-2 uppercase font-sans"
-					>
-						Oferta de entre semana
-					</h1>
-					<h2 class="text-blue-300 mt-2 font-sans text-[14px] ml-5">
-						la oferta termina el 30 de septiembre
-					</h2>
-					<div class="h-[40px] w-[200px] ml-5 mt-2 flex">
-						<h1
-							class="text-[30px] flex font-semibold text-[#3aff09] bg-[#5ba32b]"
-						>
-							-80%
-						</h1>
-						<div class="bg-slate-500">
-							<h1
-								class="text-gray-700 text-[10px] ml-8 uppercase line-through"
-							>
-								col$ 229.000
-							</h1>
-							<h1 class="uppercase text-[#3aff09] ml-2">
-								col$ 45.000
-							</h1>
-						</div>
-					</div>
-				</div>
-				<div>
+				<div class="justify-center items-center overflow-x-hidden">
 					<div
-						class="bg-gradient-to-b from-[#6fd1f5] to-blue-300 w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]"
+						class="flex w-[300%] transition duration-500"
+						id="slider2"
 					>
-						<img
-							class="h-[130px] w-[320px]"
-							src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_DarkSoulsRemastered.jpg"
-							alt=""
-						/>
-						<div class="flex h-[40px] w-[320px] mt-2">
-							<h1 class="pl-2 h-5 text-[14px]">
-								!Oferta del dia¡
-							</h1>
-							<div class="ml-3 flex bg-slate-500">
+						<section
+							class="flex w-[calc(100%/3)]"
+						>
+							<div
+								class="bg-gradient-to-b from-[#6fd1f5] h-[390px] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
+							>
+								<img
+									class="h-[250px]"
+									src="https://phantom-marca.unidadeditorial.es/a1971afbd9030f3979dbb1dc2989a139/resize/1200/f/jpg/assets/multimedia/imagenes/2023/08/14/16920229037351.jpg"
+									alt=""
+								/>
 								<h1
-									class="text-[25px] flex font-semibold text-[#3aff09] bg-[#5ba32b] pr-2 pl-1"
+									class="text-white text-[15px] ml-[20px] mt-2 uppercase font-sans"
 								>
-									-80%
+									Oferta de entre semana
 								</h1>
-								<h1
-									class="text-[20px] uppercase text-[#3aff09] ml-2 mt-1 pr-2"
+								<h2
+									class="text-blue-300 mt-2 font-sans text-[14px] ml-5"
 								>
-									col$ 45.000
-								</h1>
+									la oferta termina el 30 de septiembre
+								</h2>
+								<div class="h-[40px] w-[200px] ml-5 mt-2 flex">
+									<h1
+										class="text-[30px] flex font-semibold text-[#3aff09] bg-[#5ba32b]"
+									>
+										-80%
+									</h1>
+									<div class="bg-slate-500">
+										<h1
+											class="text-gray-700 text-[10px] ml-8 uppercase line-through"
+										>
+											col$ 229.000
+										</h1>
+										<h1
+											class="uppercase text-[#3aff09] ml-2"
+										>
+											col$ 45.000
+										</h1>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div
-						class="bg-gradient-to-b from-[#99fcff] to-blue-300 w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]"
-					>
-						<img
-							class="h-[130px] w-[320px]"
-							src="https://www.elespectador.com/resizer/v2/LOMC6L6CKRAGFGPIQUKVLQKEPI.jpg?auth=a1c7aff99f05291f99011bf7772700e88b7f2a083402e8fcbd3a91fa04fbec70&width=920&height=613&smart=true&quality=60"
-							alt=""
-						/>
-						<div class="flex h-[40px] w-[320px] mt-2">
-							<h1 class="pl-2 h-5 text-[14px]">
-								!Oferta del dia¡
-							</h1>
-							<div class="ml-3 flex bg-slate-500">
+							<div
+								class="bg-gradient-to-b from-[#6fd1f5] h-[390px] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
+							>
+								<img
+									class="h-[250px]"
+									src="https://images5.alphacoders.com/981/981500.jpg"
+									alt=""
+								/>
 								<h1
-									class="text-[25px] flex font-semibold text-[#3aff09] bg-[#5ba32b] pr-2 pl-1"
+									class="text-white text-[15px] ml-[20px] mt-2 uppercase font-sans"
 								>
-									-80%
+									Oferta de entre semana
 								</h1>
-								<h1
-									class="text-[20px] uppercase text-[#3aff09] ml-2 mt-1 pr-2"
+								<h2
+									class="text-blue-300 mt-2 font-sans text-[14px] ml-5"
 								>
-									col$ 45.000
-								</h1>
+									la oferta termina el 30 de septiembre
+								</h2>
+								<div class="h-[40px] w-[200px] ml-5 mt-2 flex">
+									<h1
+										class="text-[30px] flex font-semibold text-[#3aff09] bg-[#5ba32b]"
+									>
+										-80%
+									</h1>
+									<div class="bg-slate-500">
+										<h1
+											class="text-gray-700 text-[10px] ml-8 uppercase line-through"
+										>
+											col$ 229.000
+										</h1>
+										<h1
+											class="uppercase text-[#3aff09] ml-2"
+										>
+											col$ 45.000
+										</h1>
+									</div>
+								</div>
 							</div>
-						</div>
+							<div>
+								<div
+									class="bg-gradient-to-b from-[#6fd1f5] to-blue-300 w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]"
+								>
+									<img
+										class="h-[130px] w-[320px]"
+										src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_DarkSoulsRemastered.jpg"
+										alt=""
+									/>
+									<div class="flex h-[40px] w-[320px] mt-2">
+										<h1 class="pl-2 h-5 text-[14px]">
+											!Oferta del dia¡
+										</h1>
+										<div class="ml-3 flex bg-slate-500">
+											<h1
+												class="text-[25px] flex font-semibold text-[#3aff09] bg-[#5ba32b] pr-2 pl-1"
+											>
+												-80%
+											</h1>
+											<h1
+												class="text-[20px] uppercase text-[#3aff09] ml-2 mt-1 pr-2"
+											>
+												col$ 45.000
+											</h1>
+										</div>
+									</div>
+								</div>
+								<div
+									class="bg-gradient-to-b from-[#99fcff] to-blue-300 w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]"
+								>
+									<img
+										class="h-[130px] w-[320px]"
+										src="https://www.elespectador.com/resizer/v2/LOMC6L6CKRAGFGPIQUKVLQKEPI.jpg?auth=a1c7aff99f05291f99011bf7772700e88b7f2a083402e8fcbd3a91fa04fbec70&width=920&height=613&smart=true&quality=60"
+										alt=""
+									/>
+									<div class="flex h-[40px] w-[320px] mt-2">
+										<h1 class="pl-2 h-5 text-[14px]">
+											!Oferta del dia¡
+										</h1>
+										<div class="ml-3 flex bg-slate-500">
+											<h1
+												class="text-[25px] flex font-semibold text-[#3aff09] bg-[#5ba32b] pr-2 pl-1"
+											>
+												-80%
+											</h1>
+											<h1
+												class="text-[20px] uppercase text-[#3aff09] ml-2 mt-1 pr-2"
+											>
+												col$ 45.000
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="flex w-[calc(100%/3)]"
+						>
+							<div
+								class="bg-gradient-to-b from-[#6fd1f5] h-[390px] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
+							>
+								<img
+									class="h-[250px]"
+									src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2878980/header.jpg?t=1729266229"
+									alt=""
+								/>
+								<h1
+									class="text-white text-[15px] ml-[20px] mt-2 uppercase font-sans"
+								>
+									Oferta de entre semana
+								</h1>
+								<h2
+									class="text-blue-300 mt-2 font-sans text-[14px] ml-5"
+								>
+									la oferta termina el 30 de septiembre
+								</h2>
+								<div class="h-[40px] w-[200px] ml-5 mt-2 flex">
+									<h1
+										class="text-[30px] flex font-semibold text-[#3aff09] bg-[#5ba32b]"
+									>
+										-80%
+									</h1>
+									<div class="bg-slate-500">
+										<h1
+											class="text-gray-700 text-[10px] ml-8 uppercase line-through"
+										>
+											col$ 229.000
+										</h1>
+										<h1
+											class="uppercase text-[#3aff09] ml-2"
+										>
+											col$ 45.000
+										</h1>
+									</div>
+								</div>
+							</div>
+							<div
+								class="bg-gradient-to-b from-[#6fd1f5] h-[390px] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
+							>
+								<img
+									class="h-[250px]"
+									src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888160/header.jpg?t=1726158706"
+									alt=""
+								/>
+								<h1
+									class="text-white text-[15px] ml-[20px] mt-2 uppercase font-sans"
+								>
+									Oferta de entre semana
+								</h1>
+								<h2
+									class="text-blue-300 mt-2 font-sans text-[14px] ml-5"
+								>
+									la oferta termina el 30 de septiembre
+								</h2>
+								<div class="h-[40px] w-[200px] ml-5 mt-2 flex">
+									<h1
+										class="text-[30px] flex font-semibold text-[#3aff09] bg-[#5ba32b]"
+									>
+										-80%
+									</h1>
+									<div class="bg-slate-500">
+										<h1
+											class="text-gray-700 text-[10px] ml-8 uppercase line-through"
+										>
+											col$ 229.000
+										</h1>
+										<h1
+											class="uppercase text-[#3aff09] ml-2"
+										>
+											col$ 45.000
+										</h1>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div
+									class="bg-gradient-to-b from-[#6fd1f5] to-blue-300 w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]"
+								>
+									<img
+										class="h-[130px] w-[320px]"
+										src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1213700/header.jpg?t=1701265706"
+										alt=""
+									/>
+									<div class="flex h-[40px] w-[320px] mt-2">
+										<h1 class="pl-2 h-5 text-[14px]">
+											!Oferta del dia¡
+										</h1>
+										<div class="ml-3 flex bg-slate-500">
+											<h1
+												class="text-[25px] flex font-semibold text-[#3aff09] bg-[#5ba32b] pr-2 pl-1"
+											>
+												-80%
+											</h1>
+											<h1
+												class="text-[20px] uppercase text-[#3aff09] ml-2 mt-1 pr-2"
+											>
+												col$ 45.000
+											</h1>
+										</div>
+									</div>
+								</div>
+								<div
+									class="bg-gradient-to-b from-[#99fcff] to-blue-300 w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]"
+								>
+									<img
+										class="h-[130px] w-[320px]"
+										src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1960480/header_alt_assets_1.jpg?t=1729182805"
+										alt=""
+									/>
+									<div class="flex h-[40px] w-[320px] mt-2">
+										<h1 class="pl-2 h-5 text-[14px]">
+											!Oferta del dia¡
+										</h1>
+										<div class="ml-3 flex bg-slate-500">
+											<h1
+												class="text-[25px] flex font-semibold text-[#3aff09] bg-[#5ba32b] pr-2 pl-1"
+											>
+												-80%
+											</h1>
+											<h1
+												class="text-[20px] uppercase text-[#3aff09] ml-2 mt-1 pr-2"
+											>
+												col$ 45.000
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="flex w-[calc(100%/3)]"
+							id="sliderSection"
+						>
+							<div
+								class="bg-gradient-to-b from-[#6fd1f5] h-[390px] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
+							>
+								<img
+									class="h-[250px]"
+									src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1044720/header.jpg?t=1725062510"
+									alt=""
+								/>
+								<h1
+									class="text-white text-[15px] ml-[20px] mt-2 uppercase font-sans"
+								>
+									Oferta de entre semana
+								</h1>
+								<h2
+									class="text-blue-300 mt-2 font-sans text-[14px] ml-5"
+								>
+									la oferta termina el 30 de septiembre
+								</h2>
+								<div class="h-[40px] w-[200px] ml-5 mt-2 flex">
+									<h1
+										class="text-[30px] flex font-semibold text-[#3aff09] bg-[#5ba32b]"
+									>
+										-80%
+									</h1>
+									<div class="bg-slate-500">
+										<h1
+											class="text-gray-700 text-[10px] ml-8 uppercase line-through"
+										>
+											col$ 229.000
+										</h1>
+										<h1
+											class="uppercase text-[#3aff09] ml-2"
+										>
+											col$ 45.000
+										</h1>
+									</div>
+								</div>
+							</div>
+							<div
+								class="bg-gradient-to-b from-[#6fd1f5] h-[390px] to-blue-600 w-[320px] mr-3 mb-3 shadow-[3px_3px_8px_#00000066]"
+							>
+								<img
+									class="h-[250px]"
+									src="https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/817628/header_586x192.jpg?t=1676922471"
+									alt=""
+								/>
+								<h1
+									class="text-white text-[15px] ml-[20px] mt-2 uppercase font-sans"
+								>
+									Oferta de entre semana
+								</h1>
+								<h2
+									class="text-blue-300 mt-2 font-sans text-[14px] ml-5"
+								>
+									la oferta termina el 30 de septiembre
+								</h2>
+								<div class="h-[40px] w-[200px] ml-5 mt-2 flex">
+									<h1
+										class="text-[30px] flex font-semibold text-[#3aff09] bg-[#5ba32b]"
+									>
+										-80%
+									</h1>
+									<div class="bg-slate-500">
+										<h1
+											class="text-gray-700 text-[10px] ml-8 uppercase line-through"
+										>
+											col$ 229.000
+										</h1>
+										<h1
+											class="uppercase text-[#3aff09] ml-2"
+										>
+											col$ 45.000
+										</h1>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div
+									class="bg-gradient-to-b from-[#6fd1f5] to-blue-300 w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]"
+								>
+									<img
+										class="h-[130px] w-[320px]"
+										src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236850/header_alt_assets_2_latam.jpg?t=1729264287"
+										alt=""
+									/>
+									<div class="flex h-[40px] w-[320px] mt-2">
+										<h1 class="pl-2 h-5 text-[14px]">
+											!Oferta del dia¡
+										</h1>
+										<div class="ml-3 flex bg-slate-500">
+											<h1
+												class="text-[25px] flex font-semibold text-[#3aff09] bg-[#5ba32b] pr-2 pl-1"
+											>
+												-80%
+											</h1>
+											<h1
+												class="text-[20px] uppercase text-[#3aff09] ml-2 mt-1 pr-2"
+											>
+												col$ 45.000
+											</h1>
+										</div>
+									</div>
+								</div>
+								<div
+									class="bg-gradient-to-b from-[#99fcff] to-blue-300 w-[320px] h-[188px] mb-3 shadow-[3px_3px_8px_#00000066]"
+								>
+									<img
+										class="h-[130px] w-[320px]"
+										src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/881020/header.jpg?t=1728493225"
+										alt=""
+									/>
+									<div class="flex h-[40px] w-[320px] mt-2">
+										<h1 class="pl-2 h-5 text-[14px]">
+											!Oferta del dia¡
+										</h1>
+										<div class="ml-3 flex bg-slate-500">
+											<h1
+												class="text-[25px] flex font-semibold text-[#3aff09] bg-[#5ba32b] pr-2 pl-1"
+											>
+												-80%
+											</h1>
+											<h1
+												class="text-[20px] uppercase text-[#3aff09] ml-2 mt-1 pr-2"
+											>
+												col$ 45.000
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script>
+			const btnlef = document.querySelector("#btn-lef2");
+			const btnaft = document.querySelector("#btn-aft2");
+			const slider = document.querySelector("#slider2");
+
+
+			const totalSlides = 3;
+
+			const slideWidth = 100 / totalSlides;
+
+			let currentSlide = 0;
+
+			function moveToNextSlide() {
+				currentSlide++;
+				if (currentSlide >= totalSlides) {
+					currentSlide = 0;
+				}
+				slider.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+			}
+
+			function moveToPreviousSlide() {
+				currentSlide--;
+				if (currentSlide < 0) {
+					currentSlide = totalSlides - 1;
+				}
+				slider.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+			}
+
+			btnlef.addEventListener("click", moveToPreviousSlide);
+			btnaft.addEventListener("click", moveToNextSlide);
+		</script>
 		<!-- explorar por categorias -->
 		<div class="max-w-[1200px] mx-auto font-sans mt-2">
-			<div class="mt-10 ml-[20%]">
-				<h1 class="text-white mb-3 font-medium text-[15px] uppercase">
+			<div class="mt-10 justify-center mx-auto">
+				<h1
+					class="text-white mb-3 font-medium text-[15px] uppercase w-[80%] justify-center mx-auto"
+				>
 					Explorar por categorias
 				</h1>
 
-				<div class="flex justify-center items-center gap-5 relative">
+				<div
+					class="flex justify-center items-center gap-5 relative w-[80%] mx-auto"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="hover:cursor-pointer w-[60px] size-20 text-white absolute -left-12 bg-gradient-to-r from-blue-950 via-blue-950 via-5%"
+						class="hover:cursor-pointer w-[60px] size-20 text-white absolute -left-12 bg-gradient-to-r from-blue-950 via-blue-950 via-5% hover:via-[#f1eaea5b]"
 					>
 						<path
 							stroke-linecap="round"
@@ -693,7 +1008,7 @@ const { title } = Astro.props;
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="hover:cursor-pointer w-[60px] size-20 my-auto text-white absolute -right-12 bg-gradient-to-l from-blue-950 via-blue-950 via-5%"
+						class="hover:cursor-pointer w-[60px] size-20 my-auto text-white absolute -right-12 bg-gradient-to-l from-blue-950 via-blue-950 via-5% hover:via-[#f1eaea5b]"
 					>
 						<path
 							stroke-linecap="round"
@@ -701,37 +1016,41 @@ const { title } = Astro.props;
 							d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
 					</svg>
 					<div
-						class="inline-flex items-end w-[225px] hover:cursor-pointer h-[200px] hover:scale-110 duration-300 bg-cover bg-[url('https://i.3djuegos.com/juegos/17520/fotos/ficha/-5245513.webp')]"
+						class="relative items-end w-[225px] hover:cursor-pointer h-[200px] hover:scale-110 duration-300 bg-cover bg-gradient-to-t from-red-950 via-red-900 via-5% "
 					>
+					<img  class="absolute opacity-40 w-full h-full" src="https://i.3djuegos.com/juegos/17520/fotos/ficha/-5245513.webp" alt="">
 						<h1
-							class="uppercase bg-red-700 mx-auto mb-10 text-center text-white font-bold h-0"
+							class="text-[18px] relative uppercase mx-auto text-center text-white font-bold mb-4 top-[80%]"
 						>
 							casuales
 						</h1>
 					</div>
 					<div
-						class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://shared.akamai.steamstatic.com//store_item_assets/steam/apps/1846380/hero_capsule.jpg?t=1725523430')]"
+						class="relative items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-gradient-to-t from-blue-950 via-blue-950 via-5%"
 					>
+					<img class="absolute opacity-40 w-full h-full" src="https://shared.akamai.steamstatic.com//store_item_assets/steam/apps/1846380/hero_capsule.jpg?t=1725523430" alt="">
 						<h1
-							class="uppercase mb-10 mx-auto text-white font-bold h-0"
+							class="text-[18px] uppercase relative mb-4 mx-auto text-white font-bold h-0 text-center top-[80%]"
 						>
 							CARRERAS
 						</h1>
 					</div>
 					<div
-						class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQM8fOzeqkbIWza-KJ3ieXmENymf98AeHBgQ&s')]"
+						class="relative items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-gradient-to-t from-yellow-500 via-yellow-400 via-5%"
 					>
+					<img class="absolute opacity-40 w-full h-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQM8fOzeqkbIWza-KJ3ieXmENymf98AeHBgQ&s" alt="">
 						<h1
-							class="uppercase bg-blue-100 mx-auto mb-10 text-white font-bold h-0"
+							class="text-[18px] relative text-center top-[80%] uppercase bg-blue-100 mx-auto mb-10 text-white font-bold h-0"
 						>
 							aventuras
 						</h1>
 					</div>
 					<div
-						class="inline-flex items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-cover bg-[url('https://media.revistagq.com/photos/628f7826a66472e9837148e9/16:9/w_2560%2Cc_limit/The%2520Quarry%2520-%2520Key%2520Art%25204K.jpg')]"
+						class="relative items-end w-[225px] h-[200px] hover:cursor-pointer hover:scale-110 duration-300 bg-gradient-to-t from-purple-900 via-purple-800 via-5% "
 					>
+					<img class="absolute w-full h-full opacity-40" src="https://media.revistagq.com/photos/628f7826a66472e9837148e9/16:9/w_2560%2Cc_limit/The%2520Quarry%2520-%2520Key%2520Art%25204K.jpg" alt="">
 						<h1
-							class="uppercase bg-blue-100 mb-10 mx-auto text-white font-bold h-0"
+							class="text-[18px] relative text-center top-[80%] uppercase bg-blue-100 mb-10 mx-auto text-white font-bold h-0"
 						>
 							terror
 						</h1>
@@ -743,7 +1062,7 @@ const { title } = Astro.props;
 		<!-- iniciar sesion -->
 		<div class="max-w-[1200px] mx-auto">
 			<div
-				class="h-[150px] w-[80%] bg-[#000F18] mt-8 ml-[20%] flex flex-col items-center"
+				class="h-[150px] w-[80%] bg-[#000F18] mt-8 justify-center mx-auto flex flex-col items-center"
 			>
 				<h1 class="text-gray-400 font-semibold pt-5 font-sans pb-5">
 					Inicia sesión para ver recomendaciones personalizadas
@@ -759,10 +1078,12 @@ const { title } = Astro.props;
 		</div>
 		<!-- explorar Steam -->
 		<div class="max-w-[1200px] mx-auto mt-6">
-			<h1 class="ml-[20%] text-white font-medium uppercase mb-2">
+			<h1
+				class="text-white font-medium uppercase mb-2 w-[80%] justify-center mx-auto"
+			>
 				Explorar Steam
 			</h1>
-			<div class="w-[80%] ml-[20%] flex gap-2">
+			<div class="w-[80%] flex gap-2 justify-center mx-auto">
 				<div
 					class="h-[70px] w-[300px] rounded bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-b hover:cursor-pointer flex justify-center items-center"
 				>
